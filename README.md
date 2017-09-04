@@ -28,7 +28,7 @@ Use cases
 
 1) Run a container with a binded data directory:
 ```bash
-docker run --name mongo -d -p 9405:27017 \
+docker run -d --name mongo -p 9405:27017 \
            -v /media/usbraid/docker/mongo/db:/data/db \
            -v /media/usbraid/mongo/configdb:/data/configdb \
            paperinik/rpi-mongo
