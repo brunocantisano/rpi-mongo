@@ -5,7 +5,8 @@
 This Docker container implements Mongo Database Server on Raspberry pi.
 
  * Raspbian base image: [resin/rpi-raspbian](https://hub.docker.com/r/resin/rpi-raspbian/)
- * Mongo database v2.4.10
+ * Mongo database v3.0.9
+ * MongoDB shell version: 3.0.9
  
 ### Installation from [Docker registry hub](https://registry.hub.docker.com/u/paperinik/rpi-mongo/).
 
