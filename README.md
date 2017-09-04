@@ -20,16 +20,17 @@ docker pull paperinik/rpi-mongo
 Exposed ports and volumes
 ----
 
-The image exposes ports: `27017` (process) and `28017` http. Also, exports two volumes: `/data/db`, which contains mongo database and `/data/configdb` which contains mongo config files.
+The image exposes ports: `27017` (process) and `28017` (http). Also, exports two volumes: `/data/db`, which contains mongo database and `/data/configdb` which contains mongo config files.
 
 Use cases
 ----
 
 1) Run a container with a binded data directory:
 ```bash
-docker run --name mongo -d paperinik/rpi-mongo -p 9405:27017 \
+docker run --name mongo -d -p 9405:27017 \
            -v /media/usbraid/docker/mongo/db:/data/db \
            -v /media/usbraid/mongo/configdb:/data/configdb
+           paperinik/rpi-mongo
 ```
 ----
 
