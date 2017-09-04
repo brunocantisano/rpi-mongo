@@ -6,7 +6,6 @@ FROM resin/rpi-raspbian:jessie
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
 # Install MongoDB
 RUN apt-get update \
-#    && apt-get install -y mongodb-server \
     && apt-get install -y wget mongodb \
     && wget https://www.dropbox.com/s/diex8k6cx5rc95d/core_mongodb.tar.gz \
     && tar -xvzf core_mongodb.tar.gz -C /usr/bin \
